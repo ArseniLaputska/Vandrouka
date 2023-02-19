@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		363AFF42299118F3008D8910 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AFF41299118F3008D8910 /* ImageView.swift */; };
+		363AFF4429911DC2008D8910 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AFF4329911DC2008D8910 /* ImageModel.swift */; };
+		363AFF4629912C30008D8910 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AFF4529912C30008D8910 /* Image.swift */; };
+		3640847829708B02004185AE /* VandroukaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640847729708B02004185AE /* VandroukaApp.swift */; };
+		3640847A29708B02004185AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640847929708B02004185AE /* ContentView.swift */; };
+		3640847C29708B04004185AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3640847B29708B04004185AE /* Assets.xcassets */; };
+		3640847F29708B04004185AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3640847E29708B04004185AE /* Preview Assets.xcassets */; };
+		3640848729708BE7004185AE /* ProfileUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640848629708BE7004185AE /* ProfileUIView.swift */; };
+		364084892970A599004185AE /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364084882970A599004185AE /* EditView.swift */; };
+		3640848C2970AAC6004185AE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3640848B2970AAC6004185AE /* Profile.swift */; };
+		36408495297C7986004185AE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36408494297C7986004185AE /* String.swift */; };
+		36408498297C7A32004185AE /* DateFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36408497297C7A32004185AE /* DateFormats.swift */; };
+		3640849A297C7AF9004185AE /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36408499297C7AF9004185AE /* Int.swift */; };
+		36C323AF298965F40031A60E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C323AE298965F40031A60E /* LocationManager.swift */; };
+		36C323B129898A290031A60E /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C323B029898A290031A60E /* Places.swift */; };
+		36C323B429898BF40031A60E /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C323B329898BF40031A60E /* ExploreView.swift */; };
+		36C323B6298992340031A60E /* ExploreCellUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C323B5298992340031A60E /* ExploreCellUIView.swift */; };
+		36C323B8298998B60031A60E /* ImagePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C323B7298998B60031A60E /* ImagePageView.swift */; };
+		36C323BB298A9B330031A60E /* TabUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C323BA298A9B330031A60E /* TabUIView.swift */; };
+		36C323BD298AA07A0031A60E /* TabType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C323BC298AA07A0031A60E /* TabType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		363AFF41299118F3008D8910 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		363AFF4329911DC2008D8910 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		363AFF4529912C30008D8910 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		3640847429708B02004185AE /* Vandrouka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vandrouka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3640847729708B02004185AE /* VandroukaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VandroukaApp.swift; sourceTree = "<group>"; };
+		3640847929708B02004185AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3640847B29708B04004185AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3640847E29708B04004185AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3640848629708BE7004185AE /* ProfileUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUIView.swift; sourceTree = "<group>"; };
+		364084882970A599004185AE /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		3640848B2970AAC6004185AE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		36408494297C7986004185AE /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		36408497297C7A32004185AE /* DateFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormats.swift; sourceTree = "<group>"; };
+		36408499297C7AF9004185AE /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		36C323AC2989649C0031A60E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		36C323AE298965F40031A60E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		36C323B029898A290031A60E /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
+		36C323B329898BF40031A60E /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		36C323B5298992340031A60E /* ExploreCellUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCellUIView.swift; sourceTree = "<group>"; };
+		36C323B7298998B60031A60E /* ImagePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePageView.swift; sourceTree = "<group>"; };
+		36C323BA298A9B330031A60E /* TabUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabUIView.swift; sourceTree = "<group>"; };
+		36C323BC298AA07A0031A60E /* TabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabType.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3640847129708B02004185AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		363AFF47299290F7008D8910 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				363AFF4329911DC2008D8910 /* ImageModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3640846B29708B02004185AE = {
+			isa = PBXGroup;
+			children = (
+				3640847629708B02004185AE /* Vandrouka */,
+				3640847529708B02004185AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3640847529708B02004185AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3640847429708B02004185AE /* Vandrouka.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3640847629708B02004185AE /* Vandrouka */ = {
+			isa = PBXGroup;
+			children = (
+				36C323AC2989649C0031A60E /* Info.plist */,
+				3640847729708B02004185AE /* VandroukaApp.swift */,
+				3640847929708B02004185AE /* ContentView.swift */,
+				3640848A2970AAB6004185AE /* Model */,
+				36C323AB29895FF50031A60E /* View */,
+				363AFF47299290F7008D8910 /* ViewModel */,
+				36C323AD298965DE0031A60E /* Managers */,
+				36408493297C7973004185AE /* Extensions */,
+				36408496297C7A22004185AE /* Enums */,
+				3640847B29708B04004185AE /* Assets.xcassets */,
+				3640847D29708B04004185AE /* Preview Content */,
+			);
+			path = Vandrouka;
+			sourceTree = "<group>";
+		};
+		3640847D29708B04004185AE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3640847E29708B04004185AE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3640848529708B76004185AE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3640848629708BE7004185AE /* ProfileUIView.swift */,
+				364084882970A599004185AE /* EditView.swift */,
+				363AFF41299118F3008D8910 /* ImageView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3640848A2970AAB6004185AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3640848B2970AAC6004185AE /* Profile.swift */,
+				36C323B029898A290031A60E /* Places.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36408493297C7973004185AE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				36408494297C7986004185AE /* String.swift */,
+				36408499297C7AF9004185AE /* Int.swift */,
+				363AFF4529912C30008D8910 /* Image.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		36408496297C7A22004185AE /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				36408497297C7A32004185AE /* DateFormats.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		36C323AB29895FF50031A60E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				36C323B9298A9B1F0031A60E /* TabView */,
+				36C323B229898BE20031A60E /* Explore */,
+				3640848529708B76004185AE /* Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		36C323AD298965DE0031A60E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				36C323AE298965F40031A60E /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		36C323B229898BE20031A60E /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				36C323B329898BF40031A60E /* ExploreView.swift */,
+				36C323B5298992340031A60E /* ExploreCellUIView.swift */,
+				36C323B7298998B60031A60E /* ImagePageView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		36C323B9298A9B1F0031A60E /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				36C323BA298A9B330031A60E /* TabUIView.swift */,
+				36C323BC298AA07A0031A60E /* TabType.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3640847329708B02004185AE /* Vandrouka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3640848229708B04004185AE /* Build configuration list for PBXNativeTarget "Vandrouka" */;
+			buildPhases = (
+				3640847029708B02004185AE /* Sources */,
+				3640847129708B02004185AE /* Frameworks */,
+				3640847229708B02004185AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vandrouka;
+			productName = Vandrouka;
+			productReference = 3640847429708B02004185AE /* Vandrouka.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3640846C29708B02004185AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					3640847329708B02004185AE = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 3640846F29708B02004185AE /* Build configuration list for PBXProject "Vandrouka" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3640846B29708B02004185AE;
+			productRefGroup = 3640847529708B02004185AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3640847329708B02004185AE /* Vandrouka */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3640847229708B02004185AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3640847F29708B04004185AE /* Preview Assets.xcassets in Resources */,
+				3640847C29708B04004185AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3640847029708B02004185AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C323B429898BF40031A60E /* ExploreView.swift in Sources */,
+				363AFF4629912C30008D8910 /* Image.swift in Sources */,
+				36C323B8298998B60031A60E /* ImagePageView.swift in Sources */,
+				36C323BD298AA07A0031A60E /* TabType.swift in Sources */,
+				36408495297C7986004185AE /* String.swift in Sources */,
+				36C323B6298992340031A60E /* ExploreCellUIView.swift in Sources */,
+				3640847A29708B02004185AE /* ContentView.swift in Sources */,
+				3640848C2970AAC6004185AE /* Profile.swift in Sources */,
+				3640847829708B02004185AE /* VandroukaApp.swift in Sources */,
+				363AFF42299118F3008D8910 /* ImageView.swift in Sources */,
+				364084892970A599004185AE /* EditView.swift in Sources */,
+				363AFF4429911DC2008D8910 /* ImageModel.swift in Sources */,
+				36C323B129898A290031A60E /* Places.swift in Sources */,
+				36408498297C7A32004185AE /* DateFormats.swift in Sources */,
+				36C323BB298A9B330031A60E /* TabUIView.swift in Sources */,
+				3640848729708BE7004185AE /* ProfileUIView.swift in Sources */,
+				3640849A297C7AF9004185AE /* Int.swift in Sources */,
+				36C323AF298965F40031A60E /* LocationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3640848029708B04004185AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3640848129708B04004185AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3640848329708B04004185AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vandrouka/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vandrouka/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Vandroŭka";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your location is help us to improve your experiance.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = arseni.Vandrouka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3640848429708B04004185AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vandrouka/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vandrouka/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Vandroŭka";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your location is help us to improve your experiance.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = arseni.Vandrouka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3640846F29708B02004185AE /* Build configuration list for PBXProject "Vandrouka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3640848029708B04004185AE /* Debug */,
+				3640848129708B04004185AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3640848229708B04004185AE /* Build configuration list for PBXNativeTarget "Vandrouka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3640848329708B04004185AE /* Debug */,
+				3640848429708B04004185AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3640846C29708B02004185AE /* Project object */;
+}
