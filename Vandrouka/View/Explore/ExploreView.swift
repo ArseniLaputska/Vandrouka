@@ -9,37 +9,48 @@ import SwiftUI
 
 struct ExploreView: View {
     
-    @State private var places = [
-        Places(images: [ImagePlace(image: "camping1"), ImagePlace(image: "camping2")], placeName: "Camping at Narach", description: "Take inspiration & peace", fullDescription: "Beatiful place to became more closer with nature and take new inspiration on your life.", price: 200, rating: 4.9, isFavourite: false, latitude: 54.865700, longitude: 26.720008, category: .camping),
-        Places(images: [ImagePlace(image: "apartment1"), ImagePlace(image: "apartment2"), ImagePlace(image: "apartment3")], placeName: "Apartment in New York", description: "Best view in the city", fullDescription: "Take a full from visiting one of the excited places in the world", price: 500, rating: 5.0, isFavourite: true, latitude: 40.711331, longitude: -74.016893, category: .apartment)
+    @State private var places: [Place] = [
+        Place(images: [ImagePlace(image: "niasvizh1"), ImagePlace(image: "niasvizh2")], name: "Niasviž Castle", description: "Great castle at Niasviž", fullDescription: "Is a residential castle of the Radziwiłł family in Niasviž, Belarus. Built in the 16th and 17th centuries, and maintained by the Radziwiłł family until 1939", isFavourite: false, latitude: 53.222634, longitude: 26.692562, category: .castle),
+        Place(images: [ImagePlace(image: "church1"), ImagePlace(image: "church2")], name: "Kasciol Božaha Ciela", description: "Catholic church in the village of Bagushevichy", fullDescription: "The church was built in the middle of the 19th century. Until 1863, it was made of brick as the family burial ground of the owners of the Sventarzhecki manor in the center of the village, on the left bank of the Usa River (the territory of the ancient settlement). It was part of the manor and park ensemble.", isFavourite: true, latitude: 53.714629, longitude: 28.820114, category: .catholic)
     ]
     
     var body: some View {
-        ZStack(alignment: .bottom) {
-            List(places) { place in
-                ExploreCellUIView(places: place)
-                    .listRowSeparator(.hidden)
-                    .listRowBackground(Color.clear)
-            }
-            Button(action: {
+        NavigationView {
+            
+            ZStack(alignment: .bottom) {
                 
-            }, label: {
-                HStack {
-                    Text("Map")
-                    Image(systemName: "map.fill")
+                List(places) { place in
+                    ExploreCellUIView(place: place)
+                        .listRowSeparator(.hidden)
+                        .listRowBackground(Color.clear)
                 }
-                .padding(.vertical, 10.0)
-                .padding(.horizontal, 15.0)
-                .tint(.white)
-                .background {
-                    Color.black
-                        .cornerRadius(20)
-                }
-            })
-            .padding(.bottom, 25.0)
+                
+                NavigationLink(destination: {
+                    MapView(places: places)
+                }, label: {
+                    HStack {
+                        Text("Map")
+                        Image(systemName: "map.fill")
+                    }
+                    .padding(.vertical, 10.0)
+                    .padding(.horizontal, 15.0)
+                    .foregroundColor(.white)
+                    .background {
+                        Color.black
+                            .cornerRadius(20)
+                    }
+                })
+                .padding(.bottom, 25.0)
+                
+            }
         }
     }
 }
+
+let samplePlaces = [
+    Place(images: [ImagePlace(image: "niasvizh1"), ImagePlace(image: "niasvizh2")], name: "Niasviž Castle", description: "Great castle at Niasviž", fullDescription: "Is a residential castle of the Radziwiłł family in Niasviž, Belarus. Built in the 16th and 17th centuries, and maintained by the Radziwiłł family until 1939", isFavourite: false, latitude: 53.222634, longitude: 26.692562, category: .castle),
+    Place(images: [ImagePlace(image: "church1"), ImagePlace(image: "church2")], name: "Kasciol Božaha Ciela", description: "Catholic church in the village of Bagushevichy", fullDescription: "The church was built in the middle of the 19th century. Until 1863, it was made of brick as the family burial ground of the owners of the Sventarzhecki manor in the center of the village, on the left bank of the Usa River (the territory of the ancient settlement). It was part of the manor and park ensemble.", isFavourite: true, latitude: 53.714629, longitude: 28.820114, category: .catholic)
+]
 
 struct ExploreView_Previews: PreviewProvider {
     static var previews: some View {

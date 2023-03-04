@@ -24,7 +24,6 @@ struct TabUIView: View {
                     Text("Profile")
                 }.tag(TabType.profile)
         }
-        .tint(.red)
     }
 }
 

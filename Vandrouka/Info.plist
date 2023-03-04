@@ -4,5 +4,13 @@
 <dict>
 	<key>MKDirectionsApplicationSupportedModes</key>
 	<array/>
+	<key>NSLocationUsageDescription</key>
+	<string>We want to access your location to show interest places near of you!</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We want to access your location to show interest places near of you!</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We want to access your location to show interest places near of you!</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We want to access your location to show interest places near of you!</string>
 </dict>
 </plist>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3638D7FD29B0D2C200E772BF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3638D7FC29B0D2C200E772BF /* MapView.swift */; };
+		3638D80129B135A900E772BF /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3638D80029B135A900E772BF /* MapAnnotationView.swift */; };
+		3638D80329B13D5D00E772BF /* DetailedAnnotaionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3638D80229B13D5D00E772BF /* DetailedAnnotaionView.swift */; };
 		363AFF42299118F3008D8910 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AFF41299118F3008D8910 /* ImageView.swift */; };
 		363AFF4429911DC2008D8910 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AFF4329911DC2008D8910 /* ImageModel.swift */; };
 		363AFF4629912C30008D8910 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AFF4529912C30008D8910 /* Image.swift */; };
@@ -30,6 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3638D7FC29B0D2C200E772BF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		3638D80029B135A900E772BF /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		3638D80229B13D5D00E772BF /* DetailedAnnotaionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedAnnotaionView.swift; sourceTree = "<group>"; };
+		3638D80529B3E5D200E772BF /* Mensk.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Mensk.gpx; sourceTree = "<group>"; };
 		363AFF41299118F3008D8910 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		363AFF4329911DC2008D8910 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		363AFF4529912C30008D8910 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
@@ -65,6 +72,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3638D7FB29B0D2A600E772BF /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				3638D7FC29B0D2C200E772BF /* MapView.swift */,
+				3638D80029B135A900E772BF /* MapAnnotationView.swift */,
+				3638D80229B13D5D00E772BF /* DetailedAnnotaionView.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
 		363AFF47299290F7008D8910 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +172,7 @@
 		36C323AB29895FF50031A60E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3638D7FB29B0D2A600E772BF /* MapView */,
 				36C323B9298A9B1F0031A60E /* TabView */,
 				36C323B229898BE20031A60E /* Explore */,
 				3640848529708B76004185AE /* Profile */,
@@ -166,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				36C323AE298965F40031A60E /* LocationManager.swift */,
+				3638D80529B3E5D200E772BF /* Mensk.gpx */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -266,14 +285,17 @@
 				36408495297C7986004185AE /* String.swift in Sources */,
 				36C323B6298992340031A60E /* ExploreCellUIView.swift in Sources */,
 				3640847A29708B02004185AE /* ContentView.swift in Sources */,
+				3638D80329B13D5D00E772BF /* DetailedAnnotaionView.swift in Sources */,
 				3640848C2970AAC6004185AE /* Profile.swift in Sources */,
 				3640847829708B02004185AE /* VandroukaApp.swift in Sources */,
 				363AFF42299118F3008D8910 /* ImageView.swift in Sources */,
+				3638D80129B135A900E772BF /* MapAnnotationView.swift in Sources */,
 				364084892970A599004185AE /* EditView.swift in Sources */,
 				363AFF4429911DC2008D8910 /* ImageModel.swift in Sources */,
 				36C323B129898A290031A60E /* Places.swift in Sources */,
 				36408498297C7A32004185AE /* DateFormats.swift in Sources */,
 				36C323BB298A9B330031A60E /* TabUIView.swift in Sources */,
+				3638D7FD29B0D2C200E772BF /* MapView.swift in Sources */,
 				3640848729708BE7004185AE /* ProfileUIView.swift in Sources */,
 				3640849A297C7AF9004185AE /* Int.swift in Sources */,
 				36C323AF298965F40031A60E /* LocationManager.swift in Sources */,
