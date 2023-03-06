@@ -10,10 +10,12 @@ import CoreLocation
 import MapKit
 
 final class LocationManager: NSObject, ObservableObject {
+    static let shared: LocationManager = .init()
+    
     private let locationManager = CLLocationManager()
     
     @Published var location: CLLocationCoordinate2D?
-    @Published var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 53.222635, longitude: 26.692563), span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
+    @Published var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 53.222635, longitude: 26.692563), span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
     
     override init() {
         super.init()
@@ -23,29 +25,9 @@ final class LocationManager: NSObject, ObservableObject {
     func requestLocation() {
         locationManager.requestLocation()
     }
-    
-    func requestAuthorization() {
-        locationManager.requestWhenInUseAuthorization()
-    }
 }
 
 extension LocationManager: CLLocationManagerDelegate {
-    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        switch manager.authorizationStatus {
-            case .notDetermined:
-                print("Not Determined")
-            case .restricted:
-                print("Restricted")
-            case .denied:
-                print("Denied")
-            case .authorizedAlways:
-                manager.requestLocation()
-            case .authorizedWhenInUse:
-                manager.requestLocation()
-            @unknown default:
-                break
-        }
-    }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.first else { return }

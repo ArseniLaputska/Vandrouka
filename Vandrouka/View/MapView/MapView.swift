@@ -10,12 +10,10 @@ import CoreLocationUI
 import MapKit
 
 struct MapView: View {
-    
-    @Environment(\.dismiss) private var dismiss
-    
+        
     @State var places: [Place]
     
-    @StateObject var locationManager = LocationManager()
+    @StateObject var locationManager: LocationManager = .shared
     
     var body: some View {
         NavigationView {
@@ -25,9 +23,10 @@ struct MapView: View {
                         MapAnnotationView(place: place)
                     })
                 }
+                .ignoresSafeArea(edges: .bottom)
                 
                 LocationButton {
-                    locationManager.requestAuthorization()
+                    locationManager.requestLocation()
                 }
                 .labelStyle(.iconOnly)
                 .symbolVariant(.fill)
@@ -38,7 +37,7 @@ struct MapView: View {
             }
             .navigationTitle("Map")
             .navigationBarTitleDisplayMode(.inline)
-            
+
         }
     }
 }

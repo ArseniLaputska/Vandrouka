@@ -9,15 +9,17 @@ import Foundation
 import SwiftUI
 import MapKit
 
-enum PointCategory: String {
-    case camping = "Camping"
-    case apartment = "Apartment"
-    case castle = "Castle"
-    case manor = "Manor"
+enum PointCategory: String, CaseIterable {
+    case castle = "Castles"
+    case manor = "Manors"
     case catholic = "Catholic"
     case orthodox = "Orthodox"
-    case museum = "Museum"
-    case landmark = "Landmark"
+    case tombs = "Tombs"
+    case synagogues = "Synagogues"
+    case museum = "Museums"
+    case ruins = "Ruins"
+    case abandoned = "Abandoned"
+    case other = "Other"
 }
 
 struct Place: Identifiable {
@@ -31,48 +33,37 @@ struct Place: Identifiable {
     let longitude: Double
     let category: PointCategory
     
-    init(images: [ImagePlace], name: String, description: String, fullDescription: String, isFavourite: Bool, latitude: Double, longitude: Double, category: PointCategory) {
-        self.images = images
-        self.name = name
-        self.description = description
-        self.fullDescription = fullDescription
-        self.isFavourite = isFavourite
-        self.latitude = latitude
-        self.longitude = longitude
-        self.category = category
-    }
-    
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
     
     var color: Color {
         switch category {
-            case .camping:
-                return .red
-            case .apartment:
-                return .red
             case .castle:
-                return .green
+                return .red
             case .manor:
-                return .cyan
+                return .red
             case .catholic:
-                return .orange
+                return .green
             case .orthodox:
-                return .orange
+                return .green
             case .museum:
                 return .blue
-            case .landmark:
+            case .other:
                 return .brown
+            case .synagogues:
+                return .blue
+            case .ruins:
+                return .purple
+            case .abandoned:
+                return .cyan
+            case .tombs:
+                return .green
         }
     }
     
     var symbol: Image {
         switch category {
-            case .camping:
-                return Image(systemName: "figure.water.fitness")
-            case .apartment:
-                return Image(systemName: "building.2.crop.circle.fill")
             case .castle:
                 return Image(systemName: "building.columns.circle.fill")
             case .manor:
@@ -83,7 +74,15 @@ struct Place: Identifiable {
                 return Image(systemName: "star.circle.fill")
             case .museum:
                 return Image(systemName: "building.columns.circle.fill")
-            case .landmark:
+            case .other:
+                return Image(systemName: "star.circle.fill")
+            case .synagogues:
+                return Image(systemName: "star.circle.fill")
+            case .ruins:
+                return Image(systemName: "star.circle.fill")
+            case .abandoned:
+                return Image(systemName: "star.circle.fill")
+            case .tombs:
                 return Image(systemName: "star.circle.fill")
         }
     }

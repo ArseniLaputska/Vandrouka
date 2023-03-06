@@ -14,15 +14,21 @@ struct ExploreView: View {
         Place(images: [ImagePlace(image: "church1"), ImagePlace(image: "church2")], name: "Kasciol Božaha Ciela", description: "Catholic church in the village of Bagushevichy", fullDescription: "The church was built in the middle of the 19th century. Until 1863, it was made of brick as the family burial ground of the owners of the Sventarzhecki manor in the center of the village, on the left bank of the Usa River (the territory of the ancient settlement). It was part of the manor and park ensemble.", isFavourite: true, latitude: 53.714629, longitude: 28.820114, category: .catholic)
     ]
     
+    @State var selectedIndex: Int = 0
+    
     var body: some View {
         NavigationView {
             
             ZStack(alignment: .bottom) {
                 
-                List(places) { place in
-                    ExploreCellUIView(place: place)
-                        .listRowSeparator(.hidden)
-                        .listRowBackground(Color.clear)
+                VStack {
+                    SegmentedControlView(selectedIndex: $selectedIndex, titles: PointCategory.allCases.map { $0.rawValue } )
+                    
+                    List(places) { place in
+                        ExploreCellUIView(place: place)
+                            .listRowSeparator(.hidden)
+                            .listRowBackground(Color.clear)
+                    }
                 }
                 
                 NavigationLink(destination: {
