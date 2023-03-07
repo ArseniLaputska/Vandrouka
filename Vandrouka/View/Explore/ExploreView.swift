@@ -14,7 +14,7 @@ struct ExploreView: View {
         Place(images: [ImagePlace(image: "church1"), ImagePlace(image: "church2")], name: "Kasciol Božaha Ciela", description: "Catholic church in the village of Bagushevichy", fullDescription: "The church was built in the middle of the 19th century. Until 1863, it was made of brick as the family burial ground of the owners of the Sventarzhecki manor in the center of the village, on the left bank of the Usa River (the territory of the ancient settlement). It was part of the manor and park ensemble.", isFavourite: true, latitude: 53.714629, longitude: 28.820114, category: .catholic)
     ]
     
-    @State var selectedIndex: Int = 0
+    @State var selectedIndex: Int?
     
     var body: some View {
         NavigationView {

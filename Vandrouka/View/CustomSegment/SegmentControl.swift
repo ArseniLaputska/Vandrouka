@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SegmentedControlView: View {
-    @Binding private var selectedIndex: Int
+    @Binding private var selectedIndex: Int?
 
     @State private var frames: Array<CGRect>
     @State private var backgroundFrame = CGRect.zero
@@ -16,7 +16,7 @@ struct SegmentedControlView: View {
 
     private let titles: [String]
 
-    init(selectedIndex: Binding<Int>, titles: [String]) {
+    init(selectedIndex: Binding<Int?>, titles: [String]) {
         self._selectedIndex = selectedIndex
         self.titles = titles
         frames = Array<CGRect>(repeating: .zero, count: titles.count)
@@ -66,7 +66,7 @@ struct SegmentedControlView: View {
 }
 
 private struct SegmentedControlButtonView: View {
-    @Binding private var selectedIndex: Int
+    @Binding private var selectedIndex: Int?
     @Binding private var frames: [CGRect]
     @Binding private var backgroundFrame: CGRect
     @Binding private var isScrollable: Bool
@@ -74,7 +74,7 @@ private struct SegmentedControlButtonView: View {
     private let titles: [String]
     let checkIsScrollable: (() -> Void)
 
-    init(selectedIndex: Binding<Int>, frames: Binding<[CGRect]>, backgroundFrame: Binding<CGRect>, isScrollable: Binding<Bool>, checkIsScrollable: (@escaping () -> Void), titles: [String]) {
+    init(selectedIndex: Binding<Int?>, frames: Binding<[CGRect]>, backgroundFrame: Binding<CGRect>, isScrollable: Binding<Bool>, checkIsScrollable: (@escaping () -> Void), titles: [String]) {
         _selectedIndex = selectedIndex
         _frames = frames
         _backgroundFrame = backgroundFrame
@@ -87,11 +87,16 @@ private struct SegmentedControlButtonView: View {
     var body: some View {
         HStack(spacing: 0) {
             ForEach(titles.indices, id: \.self) { index in
-                Button(action:{ selectedIndex = index })
-                {
+                Button(action: {
+                    if index == selectedIndex {
+                        selectedIndex = nil
+                    } else {
+                        selectedIndex = index
+                    }
+                }) {
                     HStack {
                         Text(titles[index])
-                            .font(.title)
+                            .font(.title3)
                             .frame(height: 42)
                     }
                 }

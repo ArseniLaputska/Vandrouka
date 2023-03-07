@@ -103,6 +103,15 @@
 			path = CustomSegment;
 			sourceTree = "<group>";
 		};
+		3638D81229B7CCCC00E772BF /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				36C323AE298965F40031A60E /* LocationManager.swift */,
+				3638D80529B3E5D200E772BF /* Mensk.gpx */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
 		363AFF47299290F7008D8910 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,8 +214,7 @@
 		36C323AD298965DE0031A60E /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				36C323AE298965F40031A60E /* LocationManager.swift */,
-				3638D80529B3E5D200E772BF /* Mensk.gpx */,
+				3638D81229B7CCCC00E772BF /* LocationManager */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
