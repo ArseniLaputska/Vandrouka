@@ -28,7 +28,7 @@
 		3638D82929BB411900E772BF /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3638D82829BB411900E772BF /* FirebaseRemoteConfigSwift */; };
 		3638D82B29BB411900E772BF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3638D82A29BB411900E772BF /* FirebaseStorage */; };
 		3638D82D29BB411900E772BF /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3638D82C29BB411900E772BF /* FirebaseStorageCombine-Community */; };
-		3638D82F29BB423700E772BF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3638D82E29BB423700E772BF /* LoginView.swift */; };
+		3638D82F29BB423700E772BF /* PresentAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3638D82E29BB423700E772BF /* PresentAppView.swift */; };
 		3638D83429BB438A00E772BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3638D83329BB438A00E772BF /* GoogleService-Info.plist */; };
 		363AFF42299118F3008D8910 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AFF41299118F3008D8910 /* ImageView.swift */; };
 		363AFF4429911DC2008D8910 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AFF4329911DC2008D8910 /* ImageModel.swift */; };
@@ -52,6 +52,10 @@
 		36C323BD298AA07A0031A60E /* TabType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C323BC298AA07A0031A60E /* TabType.swift */; };
 		36FD237E29BF8B4300A70A94 /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD237D29BF8B4300A70A94 /* LoginButtonView.swift */; };
 		36FD238129BF906300A70A94 /* NavigationLinkExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD238029BF906300A70A94 /* NavigationLinkExtension.swift */; };
+		36FD238529BF9C6800A70A94 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD238429BF9C6800A70A94 /* RegistrationView.swift */; };
+		36FD238729BF9E4600A70A94 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD238629BF9E4600A70A94 /* SignInView.swift */; };
+		36FD238929BFA79C00A70A94 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD238829BFA79C00A70A94 /* PasswordTextField.swift */; };
+		36FD238B29BFAAB800A70A94 /* LoginTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD238A29BFAAB800A70A94 /* LoginTextFields.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,7 +68,7 @@
 		3638D80B29B65A3500E772BF /* SegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControl.swift; sourceTree = "<group>"; };
 		3638D80E29B675C200E772BF /* RectPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectPreferenceKey.swift; sourceTree = "<group>"; };
 		3638D81029B675FC00E772BF /* UnderlineModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineModifier.swift; sourceTree = "<group>"; };
-		3638D82E29BB423700E772BF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3638D82E29BB423700E772BF /* PresentAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentAppView.swift; sourceTree = "<group>"; };
 		3638D83329BB438A00E772BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		363AFF41299118F3008D8910 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		363AFF4329911DC2008D8910 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
@@ -90,6 +94,11 @@
 		36C323BC298AA07A0031A60E /* TabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabType.swift; sourceTree = "<group>"; };
 		36FD237D29BF8B4300A70A94 /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
 		36FD238029BF906300A70A94 /* NavigationLinkExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkExtension.swift; sourceTree = "<group>"; };
+		36FD238429BF9C6800A70A94 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		36FD238629BF9E4600A70A94 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		36FD238829BFA79C00A70A94 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		36FD238A29BFAAB800A70A94 /* LoginTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextFields.swift; sourceTree = "<group>"; };
+		36FD238C29C0A85500A70A94 /* VandroukaDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VandroukaDebug.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +158,9 @@
 		3638D83029BB423C00E772BF /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				3638D82E29BB423700E772BF /* LoginView.swift */,
+				36FD238329BF9C5200A70A94 /* Registration */,
+				36FD238229BF9C4100A70A94 /* SignIn */,
+				3638D82E29BB423700E772BF /* PresentAppView.swift */,
 				36FD237D29BF8B4300A70A94 /* LoginButtonView.swift */,
 			);
 			path = Login;
@@ -182,6 +193,7 @@
 		3640847629708B02004185AE /* Vandrouka */ = {
 			isa = PBXGroup;
 			children = (
+				36FD238C29C0A85500A70A94 /* VandroukaDebug.entitlements */,
 				36C323AC2989649C0031A60E /* Info.plist */,
 				3638D83329BB438A00E772BF /* GoogleService-Info.plist */,
 				3640847729708B02004185AE /* VandroukaApp.swift */,
@@ -289,8 +301,26 @@
 			isa = PBXGroup;
 			children = (
 				36FD238029BF906300A70A94 /* NavigationLinkExtension.swift */,
+				36FD238A29BFAAB800A70A94 /* LoginTextFields.swift */,
 			);
 			path = LoginView;
+			sourceTree = "<group>";
+		};
+		36FD238229BF9C4100A70A94 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				36FD238629BF9E4600A70A94 /* SignInView.swift */,
+				36FD238829BFA79C00A70A94 /* PasswordTextField.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		36FD238329BF9C5200A70A94 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				36FD238429BF9C6800A70A94 /* RegistrationView.swift */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,10 +421,12 @@
 				36C323B6298992340031A60E /* ExploreCellUIView.swift in Sources */,
 				3640847A29708B02004185AE /* ContentView.swift in Sources */,
 				3638D80F29B675C200E772BF /* RectPreferenceKey.swift in Sources */,
+				36FD238529BF9C6800A70A94 /* RegistrationView.swift in Sources */,
 				3638D80329B13D5D00E772BF /* DetailedAnnotaionView.swift in Sources */,
 				3638D80929B6568300E772BF /* SectionView.swift in Sources */,
 				3640848C2970AAC6004185AE /* Profile.swift in Sources */,
 				3638D81129B675FC00E772BF /* UnderlineModifier.swift in Sources */,
+				36FD238929BFA79C00A70A94 /* PasswordTextField.swift in Sources */,
 				3640847829708B02004185AE /* VandroukaApp.swift in Sources */,
 				3638D80C29B65A3500E772BF /* SegmentControl.swift in Sources */,
 				363AFF42299118F3008D8910 /* ImageView.swift in Sources */,
@@ -402,15 +434,17 @@
 				364084892970A599004185AE /* EditView.swift in Sources */,
 				363AFF4429911DC2008D8910 /* ImageModel.swift in Sources */,
 				36C323B129898A290031A60E /* Places.swift in Sources */,
+				36FD238B29BFAAB800A70A94 /* LoginTextFields.swift in Sources */,
 				36408498297C7A32004185AE /* DateFormats.swift in Sources */,
 				36C323BB298A9B330031A60E /* TabUIView.swift in Sources */,
 				36FD238129BF906300A70A94 /* NavigationLinkExtension.swift in Sources */,
-				3638D82F29BB423700E772BF /* LoginView.swift in Sources */,
+				3638D82F29BB423700E772BF /* PresentAppView.swift in Sources */,
 				3638D7FD29B0D2C200E772BF /* MapView.swift in Sources */,
 				3640848729708BE7004185AE /* ProfileUIView.swift in Sources */,
 				3638D80729B638BE00E772BF /* LocationButtonView.swift in Sources */,
 				3640849A297C7AF9004185AE /* Int.swift in Sources */,
 				36C323AF298965F40031A60E /* LocationManager.swift in Sources */,
+				36FD238729BF9E4600A70A94 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +570,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Vandrouka/VandroukaDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Vandrouka/Preview Content\"";
