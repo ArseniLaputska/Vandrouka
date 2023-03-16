@@ -54,8 +54,11 @@
 		36FD238129BF906300A70A94 /* NavigationLinkExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD238029BF906300A70A94 /* NavigationLinkExtension.swift */; };
 		36FD238529BF9C6800A70A94 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD238429BF9C6800A70A94 /* RegistrationView.swift */; };
 		36FD238729BF9E4600A70A94 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD238629BF9E4600A70A94 /* SignInView.swift */; };
-		36FD238929BFA79C00A70A94 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD238829BFA79C00A70A94 /* PasswordTextField.swift */; };
+		36FD238929BFA79C00A70A94 /* LoginFlowTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD238829BFA79C00A70A94 /* LoginFlowTextField.swift */; };
 		36FD238B29BFAAB800A70A94 /* LoginTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD238A29BFAAB800A70A94 /* LoginTextFields.swift */; };
+		36FD238F29C3725E00A70A94 /* LoginFlowButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD238E29C3725E00A70A94 /* LoginFlowButtonView.swift */; };
+		36FD239229C3744E00A70A94 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD239129C3744E00A70A94 /* AsyncButton.swift */; };
+		36FD239429C3A12B00A70A94 /* NavigationBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD239329C3A12B00A70A94 /* NavigationBackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,9 +99,12 @@
 		36FD238029BF906300A70A94 /* NavigationLinkExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkExtension.swift; sourceTree = "<group>"; };
 		36FD238429BF9C6800A70A94 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		36FD238629BF9E4600A70A94 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
-		36FD238829BFA79C00A70A94 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		36FD238829BFA79C00A70A94 /* LoginFlowTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlowTextField.swift; sourceTree = "<group>"; };
 		36FD238A29BFAAB800A70A94 /* LoginTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextFields.swift; sourceTree = "<group>"; };
 		36FD238C29C0A85500A70A94 /* VandroukaDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VandroukaDebug.entitlements; sourceTree = "<group>"; };
+		36FD238E29C3725E00A70A94 /* LoginFlowButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlowButtonView.swift; sourceTree = "<group>"; };
+		36FD239129C3744E00A70A94 /* AsyncButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
+		36FD239329C3A12B00A70A94 /* NavigationBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBackButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,7 @@
 		3638D83029BB423C00E772BF /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				36FD238D29C3724300A70A94 /* HelpersView */,
 				36FD238329BF9C5200A70A94 /* Registration */,
 				36FD238229BF9C4100A70A94 /* SignIn */,
 				3638D82E29BB423700E772BF /* PresentAppView.swift */,
@@ -202,6 +209,7 @@
 				36C323AB29895FF50031A60E /* View */,
 				363AFF47299290F7008D8910 /* ViewModel */,
 				36C323AD298965DE0031A60E /* Managers */,
+				36FD239029C3742300A70A94 /* BaseImpl */,
 				36408493297C7973004185AE /* Extensions */,
 				36408496297C7A22004185AE /* Enums */,
 				3640847B29708B04004185AE /* Assets.xcassets */,
@@ -310,7 +318,6 @@
 			isa = PBXGroup;
 			children = (
 				36FD238629BF9E4600A70A94 /* SignInView.swift */,
-				36FD238829BFA79C00A70A94 /* PasswordTextField.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -321,6 +328,24 @@
 				36FD238429BF9C6800A70A94 /* RegistrationView.swift */,
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		36FD238D29C3724300A70A94 /* HelpersView */ = {
+			isa = PBXGroup;
+			children = (
+				36FD238829BFA79C00A70A94 /* LoginFlowTextField.swift */,
+				36FD238E29C3725E00A70A94 /* LoginFlowButtonView.swift */,
+			);
+			path = HelpersView;
+			sourceTree = "<group>";
+		};
+		36FD239029C3742300A70A94 /* BaseImpl */ = {
+			isa = PBXGroup;
+			children = (
+				36FD239129C3744E00A70A94 /* AsyncButton.swift */,
+				36FD239329C3A12B00A70A94 /* NavigationBackButton.swift */,
+			);
+			path = BaseImpl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FD237E29BF8B4300A70A94 /* LoginButtonView.swift in Sources */,
+				36FD239229C3744E00A70A94 /* AsyncButton.swift in Sources */,
 				36C323B429898BF40031A60E /* ExploreView.swift in Sources */,
 				363AFF4629912C30008D8910 /* Image.swift in Sources */,
 				36C323B8298998B60031A60E /* ImagePageView.swift in Sources */,
@@ -426,12 +452,14 @@
 				3638D80929B6568300E772BF /* SectionView.swift in Sources */,
 				3640848C2970AAC6004185AE /* Profile.swift in Sources */,
 				3638D81129B675FC00E772BF /* UnderlineModifier.swift in Sources */,
-				36FD238929BFA79C00A70A94 /* PasswordTextField.swift in Sources */,
+				36FD238929BFA79C00A70A94 /* LoginFlowTextField.swift in Sources */,
 				3640847829708B02004185AE /* VandroukaApp.swift in Sources */,
+				36FD238F29C3725E00A70A94 /* LoginFlowButtonView.swift in Sources */,
 				3638D80C29B65A3500E772BF /* SegmentControl.swift in Sources */,
 				363AFF42299118F3008D8910 /* ImageView.swift in Sources */,
 				3638D80129B135A900E772BF /* MapAnnotationView.swift in Sources */,
 				364084892970A599004185AE /* EditView.swift in Sources */,
+				36FD239429C3A12B00A70A94 /* NavigationBackButton.swift in Sources */,
 				363AFF4429911DC2008D8910 /* ImageModel.swift in Sources */,
 				36C323B129898A290031A60E /* Places.swift in Sources */,
 				36FD238B29BFAAB800A70A94 /* LoginTextFields.swift in Sources */,

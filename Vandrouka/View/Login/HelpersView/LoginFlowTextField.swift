@@ -1,5 +1,5 @@
 //
-//  PasswordTextField.swift
+//  LoginFlowTextField.swift
 //  Vandrouka
 //
 //  Created by Arseni Laputska on 13.03.23.

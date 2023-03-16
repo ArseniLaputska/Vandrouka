@@ -28,6 +28,7 @@ struct PresentAppView: View {
                         
                     Text("Discover your \n dream place here!")
                         .font(.title)
+                        .foregroundColor(.black)
                         .bold()
                         .multilineTextAlignment(.center)
                         .padding(.bottom, 35.0)
