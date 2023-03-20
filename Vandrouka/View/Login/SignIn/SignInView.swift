@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 import AuthenticationServices
 
 struct SignInView: View {
@@ -44,15 +45,14 @@ struct SignInView: View {
                     HStack {
                         Spacer()
                         
-                        Button(action: {
-                            
-                        }, label: {
+                        NavigationLink(destination: SendRestoreCodeView(), label: {
                             Text("Recovery Password")
                                 .bold()
                                 .foregroundColor(.gray)
                                 .font(.footnote)
                         })
                         .padding(.trailing, 20.0)
+                        
                     }
                     .padding(.bottom, 10.0)
                     
@@ -124,6 +124,7 @@ struct SignInView: View {
         }
         .tint(.black)
     }
+    
 }
 
 struct SignInView_Previews: PreviewProvider {

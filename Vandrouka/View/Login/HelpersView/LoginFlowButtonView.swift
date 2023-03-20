@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginFlowButtonView: View {
     
     var label: String
+    var progressText: String = ""
     var action: () async -> Void
     
     var body: some View {
@@ -21,6 +22,6 @@ struct LoginFlowButtonView: View {
                 .background(Color.bittersweet)
                 .cornerRadius(12)
                 .padding(.horizontal, 20.0)
-        })
+        }, title: progressText)
     }
 }

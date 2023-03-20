@@ -23,14 +23,7 @@ struct RegistrationView: View {
                     .ignoresSafeArea()
                 
                 VStack {
-                    HStack {
-                        Text("Sign up")
-                            .font(.largeTitle)
-                            .bold()
-                            .padding(.leading, 20.0)
-                        
-                        Spacer()
-                    }
+                    LoginHeaderView(label: "Sign Up")
                     
                     LoginFlowTextField(titleKey: "Email", text: $email, isSecure: false, showIcon: false)
                     
