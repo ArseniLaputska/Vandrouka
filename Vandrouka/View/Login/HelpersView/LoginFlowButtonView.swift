@@ -16,12 +16,13 @@ struct LoginFlowButtonView: View {
     var body: some View {
         AsyncButton(action: action, label: {
             Text(label)
+                .frame(maxWidth: .infinity, maxHeight: 50)
                 .foregroundColor(.white)
                 .bold()
-                .frame(maxWidth: .infinity, maxHeight: 50)
-                .background(Color.bittersweet)
-                .cornerRadius(12)
-                .padding(.horizontal, 20.0)
         }, title: progressText)
+        .frame(maxWidth: .infinity, maxHeight: 50)
+        .background(Color.bittersweet)
+        .cornerRadius(12)
+        .padding(.horizontal, 20.0)
     }
 }
