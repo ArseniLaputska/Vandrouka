@@ -9,24 +9,14 @@ import SwiftUI
 
 struct ResetPasswordView: View {
     
-    @Environment(\.dismiss) var dismiss
+    @Binding var path: [RestorePasswordScreenFlow]
     
     @State var password: String = ""
     @State var confirmPassword: String = ""
-    @State var isMatch: Bool = false
     
     var body: some View {
         ZStack {
             VStack {
-                
-                HStack {
-                    NavigationBackButton(action: {
-                        dismiss()
-                    }, label: "Back")
-                    
-                    Spacer()
-                }
-                .padding(.leading, 5.0)
                 
                 Spacer()
                 
@@ -46,19 +36,14 @@ struct ResetPasswordView: View {
                 LoginFlowTextField(titleKey: "Confirm new password", text: $password)
                 
                 LoginFlowButtonView(label: "Submit", progressText: "Submitting", action: {
-                    await toggle()
+                    path.removeAll()
                 })
+                .padding(.top, 20.0)
                 
                 Spacer()
                 
             }
             .padding(.vertical, 20.0)
         }
-    }
-}
-
-extension ResetPasswordView {
-    func toggle() async {
-        isMatch.toggle()
     }
 }

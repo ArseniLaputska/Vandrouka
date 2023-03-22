@@ -9,23 +9,13 @@ import SwiftUI
 
 struct EnterRestoreCodeView: View {
     
-    @Environment(\.dismiss) var dismiss
+    @Binding var path: [RestorePasswordScreenFlow]
     
     @State var code: String = ""
-    @State var isValid: Bool = false
     
     var body: some View {
         ZStack {
             VStack {
-                
-                HStack {
-                    NavigationBackButton(action: {
-                        dismiss()
-                    }, label: "Back")
-                    
-                    Spacer()
-                }
-                .padding(.leading, 5.0)
                 
                 Spacer()
                 
@@ -44,10 +34,7 @@ struct EnterRestoreCodeView: View {
                     .padding([.bottom, .top], 20.0)
                 
                 LoginFlowButtonView(label: "Submit", progressText: "Submitting", action: {
-                    isValid.toggle()
-                })
-                .fullScreenCover(isPresented: $isValid, content: {
-                    ResetPasswordView()
+                    path.append(.resetPassword)
                 })
                 
                 Spacer()
