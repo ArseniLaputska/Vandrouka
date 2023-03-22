@@ -17,7 +17,7 @@ struct RegistrationView: View {
     @State private var isMatch = true
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 Color("whisper")
                     .ignoresSafeArea()

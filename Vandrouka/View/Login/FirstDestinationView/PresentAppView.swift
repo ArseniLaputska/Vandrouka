@@ -13,7 +13,7 @@ struct PresentAppView: View {
     @State var showSignIn: Bool = false
     
     var body: some View {
-        NavigationView(content: {
+        NavigationStack {
             ZStack {
                 Color("whisper")
                     .ignoresSafeArea()
@@ -52,7 +52,8 @@ struct PresentAppView: View {
                     Spacer()
                 }
             }
-        })
+        }
+        .tint(.black)
     }
 }
 
