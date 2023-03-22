@@ -15,10 +15,12 @@ struct NavigationBackButton: View {
     var body: some View {
         Button(action: action, label: {
             HStack {
-                Image(systemName: "arrow.left")
+                Image(systemName: "chevron.left")
                     .foregroundColor(.black)
+                    .bold()
                 
                 Text(label)
+                    .font(.body)
             }
         })
     }

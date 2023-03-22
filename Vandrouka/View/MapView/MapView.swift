@@ -16,7 +16,7 @@ struct MapView: View {
     @StateObject var locationManager: LocationManager = .shared
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack(alignment: .bottomTrailing) {
                 Map(coordinateRegion: $locationManager.region, showsUserLocation: true, annotationItems: places) { place in
                     MapAnnotation(coordinate: place.coordinate, content: {

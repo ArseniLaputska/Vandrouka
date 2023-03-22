@@ -17,20 +17,13 @@ struct RegistrationView: View {
     @State private var isMatch = true
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 Color("whisper")
                     .ignoresSafeArea()
                 
                 VStack {
-                    HStack {
-                        Text("Sign up")
-                            .font(.largeTitle)
-                            .bold()
-                            .padding(.leading, 20.0)
-                        
-                        Spacer()
-                    }
+                    LoginHeaderView(label: "Sign Up")
                     
                     LoginFlowTextField(titleKey: "Email", text: $email, isSecure: false, showIcon: false)
                     

@@ -13,6 +13,7 @@ struct AsyncButton<Label: View>: View {
     var actionOptions = Set(ActionOption.allCases)
     @ViewBuilder var label: () -> Label
     
+    @State var title: String = ""
     @State private var isDisabled = false
     @State private var showProgressView = false
     
@@ -42,11 +43,17 @@ struct AsyncButton<Label: View>: View {
         }, label: {
             ZStack {
                 label()
-                    .opacity(showProgressView ? 0.5 : 1)
+                    .opacity(showProgressView ? 0 : 1)
                 
                 if showProgressView {
-                    ProgressView()
-                        .foregroundColor(.white)
+                    HStack(spacing: 5) {
+                        ProgressView()
+                            .progressViewStyle(CircularProgressViewStyle())
+                            .tint(.white)
+                        
+                        Text(title)
+                            .tint(.white)
+                    }
                 }
             }
         })

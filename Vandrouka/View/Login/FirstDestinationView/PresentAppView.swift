@@ -1,5 +1,5 @@
 //
-//  LoginView.swift
+//  FirstEnterView.swift
 //  Vandrouka
 //
 //  Created by Arseni Laputska on 10.03.23.
@@ -13,7 +13,7 @@ struct PresentAppView: View {
     @State var showSignIn: Bool = false
     
     var body: some View {
-        NavigationView(content: {
+        NavigationStack {
             ZStack {
                 Color("whisper")
                     .ignoresSafeArea()
@@ -42,7 +42,7 @@ struct PresentAppView: View {
                     
                     Spacer()
                     
-                    LoginLink(signIn: {
+                    FirstEnterDestination(signIn: {
                         SignInView()
                             .navigationBarBackButtonHidden()
                     }, register: {
@@ -52,7 +52,8 @@ struct PresentAppView: View {
                     Spacer()
                 }
             }
-        })
+        }
+        .tint(.black)
     }
 }
 

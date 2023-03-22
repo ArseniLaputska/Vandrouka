@@ -1,5 +1,5 @@
 //
-//  LoginButtonView.swift
+//  PresentButton.swift
 //  Vandrouka
 //
 //  Created by Arseni Laputska on 13.03.23.
@@ -7,25 +7,25 @@
 
 import SwiftUI
 
-struct LoginLink<Register: View, SignIn: View>: View {
+struct FirstEnterDestination<Register: View, SignIn: View>: View {
     
     @ViewBuilder var signIn: () -> Register
     @ViewBuilder var register: () -> SignIn
     
     var body: some View {
         HStack(spacing: 0) {
-            LoginNavigationLink(destination: {
+            FirstEnterNavigationLink(destination: {
                 register()
             }, title: "Register", isSignIn: false)
             
-            LoginNavigationLink(destination: {
+            FirstEnterNavigationLink(destination: {
                 signIn()
             }, title: "Sign In", isSignIn: true)
         }
     }
 }
 
-struct LoginNavigationLink<Destination: View>: View {
+struct FirstEnterNavigationLink<Destination: View>: View {
     
     @ViewBuilder var destination: () -> Destination
     
@@ -34,13 +34,13 @@ struct LoginNavigationLink<Destination: View>: View {
     
     var body: some View {
         NavigationLink(destination: destination(), label: {
-            LoginButtonView(title: title, isSignIn: isSignIn)
+            PresentButton(title: title, isSignIn: isSignIn)
         })
         .navigationLinkStyle()
     }
 }
 
-struct LoginButtonView: View {
+struct PresentButton: View {
     
     var title: String
     var isSignIn: Bool

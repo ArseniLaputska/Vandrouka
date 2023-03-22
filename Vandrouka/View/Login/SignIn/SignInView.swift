@@ -6,15 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
 import AuthenticationServices
 
 struct SignInView: View {
     
+    @State private var path: [RestorePasswordScreenFlow] = []
+
     @State var username: String = ""
     @State var password: String = ""
     
     var body: some View {
-        NavigationView {
+        NavigationStack(path: $path) {
             ZStack {
                 Color("whisper")
                     .ignoresSafeArea()
@@ -45,7 +48,7 @@ struct SignInView: View {
                         Spacer()
                         
                         Button(action: {
-                            
+                            path.append(.sendCode)
                         }, label: {
                             Text("Recovery Password")
                                 .bold()
@@ -53,8 +56,19 @@ struct SignInView: View {
                                 .font(.footnote)
                         })
                         .padding(.trailing, 20.0)
+                        
                     }
                     .padding(.bottom, 10.0)
+                    .navigationDestination(for: RestorePasswordScreenFlow.self, destination: { flow in
+                        switch flow {
+                            case .sendCode:
+                                SendRestoreCodeView(path: $path)
+                            case .enterCode:
+                                EnterRestoreCodeView(path: $path)
+                            case .resetPassword:
+                                ResetPasswordView(path: $path)
+                        }
+                    })
                     
                     Button(action: {
                         
@@ -122,8 +136,8 @@ struct SignInView: View {
                 }
             }
         }
-        .tint(.black)
     }
+    
 }
 
 struct SignInView_Previews: PreviewProvider {

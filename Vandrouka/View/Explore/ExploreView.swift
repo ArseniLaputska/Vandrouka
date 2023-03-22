@@ -17,7 +17,7 @@ struct ExploreView: View {
     @State var selectedIndex: Int?
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             
             ZStack(alignment: .bottom) {
                 

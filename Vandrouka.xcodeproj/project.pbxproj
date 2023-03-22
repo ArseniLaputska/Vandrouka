@@ -50,6 +50,11 @@
 		36C323B8298998B60031A60E /* ImagePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C323B7298998B60031A60E /* ImagePageView.swift */; };
 		36C323BB298A9B330031A60E /* TabUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C323BA298A9B330031A60E /* TabUIView.swift */; };
 		36C323BD298AA07A0031A60E /* TabType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C323BC298AA07A0031A60E /* TabType.swift */; };
+		36EE71C729C3BCDB0098FADB /* SendRestoreCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE71C629C3BCDB0098FADB /* SendRestoreCodeView.swift */; };
+		36EE71C929C3BD0E0098FADB /* LoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE71C829C3BD0E0098FADB /* LoginHeaderView.swift */; };
+		36EE71CE29C8DC690098FADB /* EnterRestoreCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE71CD29C8DC690098FADB /* EnterRestoreCodeView.swift */; };
+		36EE71D029C8F6590098FADB /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE71CF29C8F6590098FADB /* ResetPasswordView.swift */; };
+		36EE71D429CBA2A00098FADB /* RestorePasswordScreenFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE71D329CBA2A00098FADB /* RestorePasswordScreenFlow.swift */; };
 		36FD237E29BF8B4300A70A94 /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD237D29BF8B4300A70A94 /* LoginButtonView.swift */; };
 		36FD238129BF906300A70A94 /* NavigationLinkExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD238029BF906300A70A94 /* NavigationLinkExtension.swift */; };
 		36FD238529BF9C6800A70A94 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD238429BF9C6800A70A94 /* RegistrationView.swift */; };
@@ -95,6 +100,11 @@
 		36C323B7298998B60031A60E /* ImagePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePageView.swift; sourceTree = "<group>"; };
 		36C323BA298A9B330031A60E /* TabUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabUIView.swift; sourceTree = "<group>"; };
 		36C323BC298AA07A0031A60E /* TabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabType.swift; sourceTree = "<group>"; };
+		36EE71C629C3BCDB0098FADB /* SendRestoreCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendRestoreCodeView.swift; sourceTree = "<group>"; };
+		36EE71C829C3BD0E0098FADB /* LoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHeaderView.swift; sourceTree = "<group>"; };
+		36EE71CD29C8DC690098FADB /* EnterRestoreCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterRestoreCodeView.swift; sourceTree = "<group>"; };
+		36EE71CF29C8F6590098FADB /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		36EE71D329CBA2A00098FADB /* RestorePasswordScreenFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePasswordScreenFlow.swift; sourceTree = "<group>"; };
 		36FD237D29BF8B4300A70A94 /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
 		36FD238029BF906300A70A94 /* NavigationLinkExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkExtension.swift; sourceTree = "<group>"; };
 		36FD238429BF9C6800A70A94 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -165,10 +175,9 @@
 			isa = PBXGroup;
 			children = (
 				36FD238D29C3724300A70A94 /* HelpersView */,
+				36EE71C529C3B9AB0098FADB /* FirstDestinationView */,
 				36FD238329BF9C5200A70A94 /* Registration */,
 				36FD238229BF9C4100A70A94 /* SignIn */,
-				3638D82E29BB423700E772BF /* PresentAppView.swift */,
-				36FD237D29BF8B4300A70A94 /* LoginButtonView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -259,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				36408497297C7A32004185AE /* DateFormats.swift */,
+				36EE71D329CBA2A00098FADB /* RestorePasswordScreenFlow.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -305,6 +315,15 @@
 			path = TabView;
 			sourceTree = "<group>";
 		};
+		36EE71C529C3B9AB0098FADB /* FirstDestinationView */ = {
+			isa = PBXGroup;
+			children = (
+				3638D82E29BB423700E772BF /* PresentAppView.swift */,
+				36FD237D29BF8B4300A70A94 /* LoginButtonView.swift */,
+			);
+			path = FirstDestinationView;
+			sourceTree = "<group>";
+		};
 		36FD237F29BF904300A70A94 /* LoginView */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +337,9 @@
 			isa = PBXGroup;
 			children = (
 				36FD238629BF9E4600A70A94 /* SignInView.swift */,
+				36EE71C629C3BCDB0098FADB /* SendRestoreCodeView.swift */,
+				36EE71CD29C8DC690098FADB /* EnterRestoreCodeView.swift */,
+				36EE71CF29C8F6590098FADB /* ResetPasswordView.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -335,6 +357,7 @@
 			children = (
 				36FD238829BFA79C00A70A94 /* LoginFlowTextField.swift */,
 				36FD238E29C3725E00A70A94 /* LoginFlowButtonView.swift */,
+				36EE71C829C3BD0E0098FADB /* LoginHeaderView.swift */,
 			);
 			path = HelpersView;
 			sourceTree = "<group>";
@@ -460,16 +483,21 @@
 				3638D80129B135A900E772BF /* MapAnnotationView.swift in Sources */,
 				364084892970A599004185AE /* EditView.swift in Sources */,
 				36FD239429C3A12B00A70A94 /* NavigationBackButton.swift in Sources */,
+				36EE71C929C3BD0E0098FADB /* LoginHeaderView.swift in Sources */,
 				363AFF4429911DC2008D8910 /* ImageModel.swift in Sources */,
+				36EE71C729C3BCDB0098FADB /* SendRestoreCodeView.swift in Sources */,
 				36C323B129898A290031A60E /* Places.swift in Sources */,
+				36EE71D029C8F6590098FADB /* ResetPasswordView.swift in Sources */,
 				36FD238B29BFAAB800A70A94 /* LoginTextFields.swift in Sources */,
 				36408498297C7A32004185AE /* DateFormats.swift in Sources */,
 				36C323BB298A9B330031A60E /* TabUIView.swift in Sources */,
 				36FD238129BF906300A70A94 /* NavigationLinkExtension.swift in Sources */,
 				3638D82F29BB423700E772BF /* PresentAppView.swift in Sources */,
 				3638D7FD29B0D2C200E772BF /* MapView.swift in Sources */,
+				36EE71CE29C8DC690098FADB /* EnterRestoreCodeView.swift in Sources */,
 				3640848729708BE7004185AE /* ProfileUIView.swift in Sources */,
 				3638D80729B638BE00E772BF /* LocationButtonView.swift in Sources */,
+				36EE71D429CBA2A00098FADB /* RestorePasswordScreenFlow.swift in Sources */,
 				3640849A297C7AF9004185AE /* Int.swift in Sources */,
 				36C323AF298965F40031A60E /* LocationManager.swift in Sources */,
 				36FD238729BF9E4600A70A94 /* SignInView.swift in Sources */,
