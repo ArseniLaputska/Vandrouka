@@ -113,7 +113,7 @@ struct SignInView: View {
                                 
                                 Text("Continue with Google")
                                     .font(.title3)
-                                    .bold()
+                                    .fontWeight(.medium)
                                     .foregroundColor(.white)
                             }
                         })
